@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>introdução Tailwind</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-300 font-sans">
+
+  <header class="bg-red-600 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-center">MySites</h1>
+    <nav>
+      <ul class="flex gap-4">
+        <li><a href="#Início" class="hover:underline">Início</a></li>
+        <li><a href="#Sobre" class="hover:underline">Sobre</a></li>
+        <li><a href="#Contato" class="hover:underline">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="text-center py-16 bg-white">
+    <p class="text-gray-600 mb-6 font-bold" id="Início">Início</p>
+    <h2 class="text-4xl font-bold mb-4">Aprenda Front-End do Zero até o avançado!</h2>
+    <p class="text-gray-600 mb-6 font-bold">
+      Domine HTML, CSS e JavaScript e Tailwind e crie sites incríveis.
+    </p>
+    <button class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-800 transition">
+      Inscrever-se
+    </button>
+  </section>
+
+ <section class="py-10 px-3 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+
+  <div class="cursor-pointer [perspective:1000px]" onclick="this.children[0].classList.toggle('[transform:rotateY(180deg)]')">
+    <div class="relative min-h-[420px] transition-transform duration-500 [transform-style:preserve-3d]">
+
+      <div class="absolute inset-0 [backface-visibility:hidden] bg-orange-200 p-6 rounded-lg shadow flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-orange-700 mb-2">HTML</h3>
+          <img class="w-32 h-48 rounded-lg shadow-md mx-auto" src="html.png" alt="">
+        </div>
+        <p class="text-gray-700 text-center">
+          Aprenda a estruturar páginas web com HTML5. <br>
+      Aqui você aprende toda a base da programação web. Mesmo que nunca tenha visto um códico antes, 
+      você vai entender como um site funciona. E como resultado, irá conseguir criar os seus próprios sites.
+        </p>
+      </div>
+
+      <div class="absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden] bg-orange-200 p-6 rounded-lg shadow text-center flex flex-col justify-center">
+        <h3 class="text-lg font-bold mb-2">Curso de HTML</h3>
+        <p> Valor: R$ 60,00</p>
+        <p> Conteúdo: HTML5 completo</p>
+        <p> Certificado: Sim</p>
+        <p> Professor: Larissa</p>
+        <p> Duração: 10 horas</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cursor-pointer [perspective:1000px]" onclick="this.children[0].classList.toggle('[transform:rotateY(180deg)]')">
+    <div class="relative min-h-[420px] transition-transform duration-500 [transform-style:preserve-3d]">
+
+      <div class="absolute inset-0 [backface-visibility:hidden] bg-blue-200 p-6 rounded-lg shadow flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-blue-800 mb-2">CSS</h3>
+          <img class="w-32 h-48 rounded-lg shadow-md mx-auto" src="css1.png" alt="">
+        </div>
+        <p class="text-gray-700 text-center">
+         Estilize suas páginas com CSS moderno e responsivo. <br>
+Você irá transformar os seus sites, deixando-os mais bonitos, modernas e com aparência de site profissional e essa é a sua vantagem.
+        </p>
+      </div>
+
+      <div class="absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden] bg-blue-200 p-6 rounded-lg shadow text-center flex flex-col justify-center">
+        <h3 class="text-lg font-bold mb-2">Curso de CSS</h3>
+        <p> Valor: R$ 70,00</p>
+        <p> Conteúdo: CSS moderno + responsivo</p>
+        <p> Certificado: Sim</p>
+        <p> Professor: Manuela</p>
+        <p> Duração: 12 horas</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cursor-pointer [perspective:1000px]" onclick="this.children[0].classList.toggle('[transform:rotateY(180deg)]')">
+    <div class="relative min-h-[420px] transition-transform duration-500 [transform-style:preserve-3d]">
+
+      <div class="absolute inset-0 [backface-visibility:hidden] bg-yellow-200 p-6 rounded-lg shadow flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-yellow-800 mb-2">JavaScript</h3>
+          <img class="w-32 h-48 rounded-lg shadow-md mx-auto" src="js.png" alt="">
+        </div>
+        <p class="text-gray-700 text-center">
+          Adicione interatividade com JavaScript. <br>
+Você irá dar vida ao seu site, criando interatividade com o usuário, completando o seu site.
+        </p>
+      </div>
+
+      <div class="absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden] bg-yellow-200 p-6 rounded-lg shadow text-center flex flex-col justify-center">
+        <h3 class="text-lg font-bold mb-2">Curso de JavaScript</h3>
+        <p> Valor: R$ 80,00</p>
+        <p> Conteúdo: JS do básico ao avançado</p>
+        <p> Certificado: Sim</p>
+        <p> Professor: Maria Eduarda</p>
+        <p> Duração: 20 horas</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cursor-pointer [perspective:1000px]" onclick="this.children[0].classList.toggle('[transform:rotateY(180deg)]')">
+    <div class="relative min-h-[420px] transition-transform duration-500 [transform-style:preserve-3d]">
+
+      <div class="absolute inset-0 [backface-visibility:hidden] bg-blue-200 p-6 rounded-lg shadow flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-blue-800 mb-2">TailwindCss</h3>
+          <img class="w-32 h-48 rounded-lg shadow-md mx-auto" src="tailwindcss.png" alt="">
+        </div>
+        <p class="text-gray-700 text-center">
+          Utilize o Tailwindcss para melhorar a facilidade na hora de estilizar seu site. <br>
+Você irá facilitar o uso do css, fazendo a estilização no próprio HTML.
+        </p>
+      </div>
+
+      <div class="absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden] bg-blue-200 p-6 rounded-lg shadow text-center flex flex-col justify-center">
+        <h3 class="text-lg font-bold mb-2">Curso de Tailwind</h3>
+        <p> Valor: R$ 50,00</p>
+        <p> Conteúdo: Tailwind completo</p>
+        <p> Certificado: Sim</p>
+        <p> Professor: Ana Clara</p>
+        <p> Duração: 8 horas</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+  <footer class="bg-gray-800 text-white text-center p-4">
+    <p id="Sobre">Sobre:</p>
+    <p id="Contato">Contato: Larissa: 15 98108-5915 <br>Email: larissa.mariz1a@gmail.com</p>
+    <p>© 2026 - MySites - Todos os Direitos Reservados!</p>
+  </footer>
+
+</body>
+</html>
